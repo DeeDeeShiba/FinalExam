@@ -6,12 +6,20 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: pink;
+        }
     </style>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<table style="width:35%">
+<body style="background-color:burlywood;">
+<table style="width:30%">
 <tr>
     <th>Count</th>
     <th>First Name</th>
@@ -19,6 +27,10 @@
     <th>Link Details</th>
 </tr>
 </table>
-<p><a href="CustomerDetails.html" th:href="@{CustomerDetails}">Customer Details</a></p>
+<p><a href="CustomerDetails.html" th:href="@{CustomerDetails}">Details</a></p>
+<footer>
+    <div id="footer">Sheridan Collage - Adolfo David Romero
+    </div>
+</footer>
 </body>
 </html>
